@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  background-color: #f3f4f6;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  width: 100%;
+  /* Ensure container spans full width */
+}
+
+.userDetailsDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 150%;
+}
+
+.userDetailsDiv h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+
+
+}
+
+label span {
+  display: flex;
+  padding-top: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
+  box-sizing: border-box;
+  align-self: left;
+  background-color: #f3f4f6;
+  border: none;
+}
+
+.displayuserDetail {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #0e374e;
+  padding: 36px 24px;
+
+}
+
+.displayuserDetail p {
+  margin: 0;
+}
+
+.fullName {
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.displayResult {
+  width: 50%;
+  background-color: white;
+  margin: 0 auto;
+  color: white;
+  height: auto;
+  padding: 0;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Stack form and displayResult */
+    overflow-x: scroll;
+    /* Allow horizontal scrolling */
+  }
+
+  .displayResult {
+    width: 100vw;
+    margin: 0;
+    min-width: 100vw;
+    padding-top: 10%;
+  }
+
+  .formSection {
+    width: 60vw;
+    margin: 0;
+    min-width: 60vw;
+    padding-top: 20px;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.educationFooter,
+.experienceFooter {
+  color: #0e374e;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #eef1f2;
+  padding: 10px;
+  margin: 30px auto 0;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}

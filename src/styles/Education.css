@@ -1,0 +1,86 @@
+.educationFooter {
+  color: #0e374e;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #eef1f2;
+  padding: 10px;
+  margin: 30px auto 0;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.educationDisplay {
+  color: black !important;
+  display: flex;
+  position: relative;
+
+
+}
+
+.deleteEducation {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.deleteEducation:hover {
+  background-color: #eef1f2;
+}
+
+@media(max-width: 768px) {
+  .deleteEducation {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+
+  }
+}
+
+.educationSection {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 150%;
+  margin-top: 50px;
+  position: relative;
+}
+
+
+
+.educationSection h2 {
+  padding-top: 30px;
+}
+
+.educationDisplay {
+  display: flex;
+  gap: 50px;
+}
+
+.dateandLocation {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+
+}
+
+@media (max-width: 768px) {
+  .educationDisplay {
+    gap: 0px;
+  }
+
+  .dateandLocation {
+    padding-left: 10px;
+
+  }
+}
