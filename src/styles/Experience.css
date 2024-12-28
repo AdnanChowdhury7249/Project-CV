@@ -35,6 +35,15 @@
   border-radius: 3px;
 }
 
+@media(max-width: 768px) {
+  .deleteExperience {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+
+  }
+}
+
 .deleteExperience:hover {
   background-color: #eef1f2;
 }
